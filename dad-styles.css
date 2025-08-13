@@ -1,0 +1,112 @@
+/* --- Variables et Style Général --- */
+:root {
+    --primary-color: #4a90e2; /* Bleu */
+    --secondary-color: #f5a623; /* Orange */
+    --correct-color: #28a745; /* Vert plus vif */
+    --incorrect-color: #dc3545; /* Rouge plus vif */
+    --light-bg: #f8f9fa;
+    --dark-text: #333;
+    --border-radius: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, Monaco, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app-container {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    max-height: 600px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+/* --- En-tête avec la date --- */
+#app-header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+#date-display {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+#date-subtitle-display {
+    font-size: 1rem;
+    color: #6c757d; /* Gris secondaire */
+}
+
+/* --- Contenu de l'activité --- */
+#activity-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* --- Pied de page --- */
+#activity-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* --- Boîte de Correction --- */
+#correction-box {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+#correction-box.hidden {
+    display: none;
+}
+#correction-box.correct {
+    background-color: #e9f7ef;
+    color: var(--correct-color);
+    border: 1px solid var(--correct-color);
+}
+#correction-box.incorrect {
+    background-color: #fbebed;
+    color: var(--incorrect-color);
+    border: 1px solid var(--incorrect-color);
+}
+
+/* --- Styles spécifiques aux activités --- */
+.math-quiz-container { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+.math-question { font-size: 4rem; font-weight: bold; letter-spacing: 0.1em; }
+.math-form { display: flex; gap: 1rem; align-items: center;}
+.math-input {
+    width: 150px; padding: 1rem; font-size: 2rem; text-align: center;
+    border: 2px solid #ccc; border-radius: var(--border-radius);
+}
+.math-input:focus { outline: none; border-color: var(--primary-color); }
+.math-submit {
+    padding: 1rem 2rem; font-size: 1.5rem; font-weight: bold; color: white;
+    background-color: var(--secondary-color); border: none;
+    border-radius: var(--border-radius); cursor: pointer;
+}
