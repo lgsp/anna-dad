@@ -45,25 +45,91 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- DATA (activités, etc.) ---
     const program = {
         0: [ // Dimanche
-            { type: 'math_quiz', count: 10, operator: '**', max_val: 10, title: { en: 'Multiplication by itself', fr: 'Mutliplications par lui-même', ru: 'Умножение на себя' } },
+            {
+		type: 'math_quiz',
+		count: 10, operator: '**',
+		max_val: 10,
+		title: {
+		    en: 'Multiplication by itself',
+		    fr: 'Mutliplications par lui-même',
+		    ru: 'Умножение на себя'
+		}
+	    },
         ],
         1: [ // Lundi
-            { type: 'math_quiz', count: 10, operator: '+', max_val: 9, title: { en: '1-digit additions', fr: 'Additions à 1 chiffre', ru: 'Сложение однозначных чисел' } },
+            {
+		type: 'math_quiz',
+		count: 10,
+		operator: '+',
+		max_val: 9,
+		title: {
+		    en: '1-digit additions',
+		    fr: 'Additions à 1 chiffre',
+		    ru: 'Сложение однозначных чисел'
+		}
+	    },
         ],
         2: [ // Mardi
-            { type: 'math_quiz', count: 10, operator: '*', max_val: 10, title: { en: 'Single-digit multiplications', fr: 'Multiplications à 1 chiffre', ru: 'Умножение на однозначное число' } }
+            {
+		type: 'math_quiz',
+		count: 10,
+		operator: '*',
+		max_val: 10,
+		title: {
+		    en: 'Single-digit multiplications',
+		    fr: 'Multiplications à 1 chiffre',
+		    ru: 'Умножение на однозначное число'
+		}
+	    }
         ],
         3: [ // Mercredi
-            { type: 'math_quiz', count: 10, operator: '/', max_val: 100, title: { en: '1-digit divisions', fr: 'Divisions à 1 chiffre', ru: 'Деление на 1 цифру' } }
+            {
+		type: 'math_quiz',
+		count: 10, operator: '/',
+		max_val: 100, title: {
+		    en: '1-digit divisions',
+		    fr: 'Divisions à 1 chiffre',
+		    ru: 'Деление на 1 цифру'
+		}
+	    }
         ],
         4: [ // Jeudi
-            { type: 'math_quiz', count: 10, operator: '+', max_val: 10, title: { en: '2-digit additions', fr: 'Additions à 2 chiffres', ru: 'Сложение двухзначных чисел' } }
+            {
+		type: 'math_quiz',
+		count: 10,
+		operator: '+',
+		max_val: 10,
+		title: {
+		    en: '2-digit additions',
+		    fr: 'Additions à 2 chiffres',
+		    ru: 'Сложение двухзначных чисел'
+		}
+	    }
         ],
         5: [ // Vendredi
-            { type: 'math_quiz', count: 10, operator: '*', max_val: 10, title: { en: '2-digit multiplications', fr: 'Multiplications à 2 chiffres', ru: 'Умножение двухзначных чисел' } }
+            {
+		type: 'math_quiz',
+		count: 10, operator: '*',
+		max_val: 10,
+		title: {
+		    en: '2-digit multiplications',
+		    fr: 'Multiplications à 2 chiffres',
+		    ru: 'Умножение двухзначных чисел'
+		}
+	    }
         ],
         6: [ // Samedi
-            { type: 'math_quiz', count: 10, operator: '/', max_val: 100, title: { en: '2-digit divisions', fr: 'Divisions à 2 chiffres', ru: '2-значные деления' } }
+            {
+		type: 'math_quiz',
+		count: 10,
+		operator: '/',
+		max_val: 100,
+		title: {
+		    en: '2-digit divisions',
+		    fr: 'Divisions à 2 chiffres',
+		    ru: '2-значные деления'
+		}
+	    }
         ],
     };
     
